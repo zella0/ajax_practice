@@ -40,7 +40,7 @@ You are making an app for your new company that assigns roles to employees. You'
 
     * The format of the body for the POST request should be:
 
-      ```json
+      ```js
       {
         firstName: 'First',
         lastName: 'Last',
