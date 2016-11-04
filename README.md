@@ -17,7 +17,7 @@ You are making an app for your new company that assigns roles to employees. You'
     * A first name input (with a label)
     * A last name input (with a label)
     * A drop-down menu for roles (with a label and a disabled placeholder that says "Select an option here")
-    * An 275px by 275px image from [placehold.it](http://placehold.it) as a placeholder, with the css class "role-preview"
+    * An 275px by 275px image from [placehold.it](https://placehold.it) as a placeholder, with the css class "role-preview"
     * A save button with the class "save"
     * An empty paragraph with the class "save-status"
     * When finished, your form should look like this:
@@ -28,14 +28,14 @@ You are making an app for your new company that assigns roles to employees. You'
     * Dynamically generate the option list of roles by making a GET request to the following API endpoint:
 
         ```
-        http://galvanize-student-apis.herokuapp.com/gpersonnel/roles
+        https://galvanize-student-apis.herokuapp.com/gpersonnel/roles
         ```
 
     * Whenever the role is changed, the image should be updated with the `img` of that role.
     * Whenever the save button is clicked, *the default behavior should be prevented*, and a POST request should be made to the following API endpoint:
 
         ```
-        http://galvanize-student-apis.herokuapp.com/gpersonnel/users
+        https://galvanize-student-apis.herokuapp.com/gpersonnel/users
         ```
 
     * The format of the body for the POST request should be:
