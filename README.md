@@ -15,10 +15,12 @@ You are making an app for your new company that assigns roles to employees. You'
 
 1. In the `index.html` file create a form that includes:
     * A first name input (with a label)
+      * When the form loads, the user's focus should automatically start in this input field
     * A last name input (with a label)
     * A drop-down menu for roles (with a label and a disabled placeholder that says "Select an option here")
     * An 275px by 275px image from [placehold.it](https://placehold.it) as a placeholder, with the css class "role-preview"
-    * A save button with the class "save"
+      * For accessibility, add a descriptive `alt` tag
+    * A submit button with the class "save" and text of "Save"
     * An empty paragraph with the class "save-status"
     * When finished, your form should look like this:
 
@@ -26,6 +28,7 @@ You are making an app for your new company that assigns roles to employees. You'
 
 1. Using the included `./assets/scripts/app.js` file, add the following behavior:
     * Dynamically generate the option list of roles by making a GET request to the following API endpoint:
+      * STRETCH: first sort the roles by title, then generate the option list
 
         ```
         https://galvanize-student-apis.herokuapp.com/gpersonnel/roles
