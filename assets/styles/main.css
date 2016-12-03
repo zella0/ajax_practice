@@ -8,7 +8,12 @@ h1 {
 }
 
 form {
-    width: 275px;
+    /* --size is a CSS Variable.  Read:
+     * CSS Variables: Why Should You Care (https://developers.google.com/web/updates/2016/02/css-variables-why-should-you-care)
+     * Using CSS Variables: (https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables)
+    */
+    --size: 275px;
+    width: var(--size);
 }
 
 label, input, select, button {
@@ -42,7 +47,8 @@ input, select {
 }
 
 .role-preview {
-    width: 275px;
-    height: 275px;
+    /* What is --size?  Check the form properties near the top of this page */
+    width: var(--size);
+    height: var(--size);
     margin-bottom: 1rem;
 }
