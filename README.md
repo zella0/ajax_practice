@@ -51,7 +51,7 @@ You are making an app for your new company that assigns roles to employees. You'
       }
       ```
     * No key or value in the POST body can be empty and the role must match one of the roles returned from the initial API call.
-    * When the result of the `POST` from the save button returns, you should display the resulting `message` in the `.save-status` paragraph.
+    * When the result of the `POST` from the save button returns, you should display the resulting `message` in a paragraph with the `.save-status` class
       * You will need to `show` the `.save-status` paragraph after setting the message.
       * The message should be faded in over 500ms
       * Display the message for 2000ms
