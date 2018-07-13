@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Galvanize Personnel</title>
-        <link rel="stylesheet" href="./assets/styles/main.css">
-    </head>
-    <body>
-      <h1>Galvanize Personnel</h1>
-      <form>
-        <!-- Your code here! -->
-      </form>
-      <script src="./assets/scripts/app.js" charset="utf-8"></script>
-    </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Galvanize Personnel</title>
+  <link rel="stylesheet" href="./assets/styles/main.css">
+</head>
+
+<body>
+  <h1>Galvanize Personnel</h1>
+  <form>
+    <label for="firstname">First Name<input type="text" name="firstname" value="" autofocus required></label>
+    <label for="lastname">Last Name<input type="text" name="lastname" value="" required></label>
+    <label for="dropdownMenu">Select a role</label>
+    <select class="roles-dropdown" name="dropdownMenu" id='test'>
+        <option value="error">Select an option here</option>
+    </select>
+    <img src="http://via.placeholder.com/275x275" alt="" id="imgBox">
+    <button type="button" name="saveBtn" class="save">Save</button>
+      <p class="save-status" id='status'></p>
+  </form>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./assets/scripts/app.js" charset="utf-8"></script>
+</body>
+
 </html>
